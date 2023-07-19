@@ -9,7 +9,11 @@
     'website': 'https://github.com/jopi-odoo/technical_training',
     'category': 'Kawiil/Kawiil',
     'depends': ['base',],
-    'data': [],
+    'data': [
+        'security/motorcycle_registry_groups.xml',
+        'security/ir.model.access.csv',
+        'security/motorcycle_registry_security.xml',
+    ],
     'demo': [
         'demo/registry_demo.xml', 
     ],
