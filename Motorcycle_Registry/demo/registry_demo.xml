@@ -4,22 +4,16 @@
         <record id="registry_01" model="motorcycle.registry">
             <field name="registry_number">Registry Number 01</field>
             <field name="vin">KAUK21XL847321</field>
-            <field name="first_name">Name 01</field>
-            <field name="last_name">Last Name 01</field>
             <field name="license_plate">KLR453LA</field>
         </record>
         <record id="registry_02" model="motorcycle.registry">
             <field name="registry_number">Registry Number 02</field>
-            <field name="vin">KAUK21XL847322</field>    
-            <field name="first_name">Name 02</field>
-            <field name="last_name">Last Name 02</field>
+            <field name="vin">KAUK21XL847322</field>
             <field name="license_plate">KLR345LB</field>
         </record>
         <record id="registry_03" model="motorcycle.registry">
             <field name="registry_number">Registry Number 03</field>
             <field name="vin">KAUK21XL847323</field>
-            <field name="first_name">Name 03</field>
-            <field name="last_name">Last Name 03</field>
             <field name="license_plate">KLR343LC</field>
         </record>
     </data>

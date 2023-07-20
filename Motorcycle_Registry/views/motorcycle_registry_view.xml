@@ -13,13 +13,17 @@
                             <separator string="Motorcycle Information"/>
                             <field name="register_date"></field>
                             <field name="vin"></field>
+                            <field name="make"></field>
+                            <field name="model"></field>
+                            <field name="year"></field>
                             <field name="current_mileage"></field>
                             <field name="license_plate"></field>
                         </group>
                         <group>
                             <separator string="Owner Information"/>
-                            <field name="first_name"></field>
-                            <field name="last_name"></field>
+                            <field name="owner_id"/>
+                            <field name="phone"/>
+                            <field name="email"/>
                         </group>
                     </group>
                     <notebook>
@@ -41,9 +45,11 @@
             <tree string="Registry List">
                 <field name="registry_number"/>
                 <field name="vin"/>
+                <field name="make"></field>
+                <field name="model"></field>
+                <field name="year"></field>
                 <field name="license_plate"/>
-                <field name="first_name"/>
-                <field name="last_name"/>
+                <field name="owner_id"/>
             </tree>
         </field>
     </record>
@@ -55,7 +61,6 @@
             <search>
                 <field name="registry_number"/>
                 <field name="vin"/>
-                <field name="last_name"/>
                 <field name="license_plate"/>
             </search>
         </field>
