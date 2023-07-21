@@ -16,7 +16,6 @@
                                 <field name="model"/>
                                 <field name="year"/>
                                 <field name="curb_weight"/>
-                                <field name="year"/>
                             </group>
                             <group>
                                 <separator  string="Motor Information"/>

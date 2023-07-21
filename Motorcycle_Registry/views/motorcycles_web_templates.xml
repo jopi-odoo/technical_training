@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="products_website">
+            <t t-call="website.layout">
+                <t t-set="title">Motorcycles</t>
+                <div class="oe_structure">
+                    <div class="container">
+                        <h1>Motorcycles</h1>
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Specs</th>
+                                <th>Year</th>
+                                <th>Range</th>
+                                <th>Horserpower</th>
+                                <th>Torque</th>
+                                <th>Top Speed</th>
+                                <th>Battery Capacity</th>
+                                <th>Curb Weight</th>
+                            </tr>
+                            <t t-foreach="motorcycles" t-as="motorcycle">
+                                <t t-if="motorcycle.detailed_type == 'motorcycle'">
+                                    <tr>
+                                        <td>
+                                            <h3>
+                                                <t t-esc="motorcycle.name"/>
+                                            </h3>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                <t t-esc="motorcycle.year"/>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                <t t-esc="motorcycle.range"/>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                <t t-esc="motorcycle.horsepower"/>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                <t t-esc="motorcycle.torque"/>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                <t t-esc="motorcycle.top_speed"/>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                <t t-esc="motorcycle.battery_capacity"/>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                <t t-esc="motorcycle.curb_weight"/>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    </t>
+                                </t>
+                        </table>
+                    </div>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>
