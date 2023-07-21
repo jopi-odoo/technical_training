@@ -8,7 +8,7 @@
     'author': 'jopi-odoo',
     'website': 'https://github.com/jopi-odoo/technical_training',
     'category': 'Kawiil/Kawiil',
-    'depends': ['base',],
+    'depends': ['stock',],
     'data': [
         'security/motorcycle_registry_groups.xml',
         'security/ir.model.access.csv',
@@ -16,6 +16,7 @@
         'data/registry_data.xml',
         'views/motorcycle_registry_menulist.xml',
         'views/motorcycle_registry_view.xml',
+        'views/product_view_inherit.xml',
     ],
     'demo': [
         'demo/registry_demo.xml', 
